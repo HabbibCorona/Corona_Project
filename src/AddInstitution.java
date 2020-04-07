@@ -23,7 +23,7 @@ public class AddInstitution
 
             statement = connection.createStatement();
 
-            resultSet = statement.executeQuery("SELECT * FROM db_Habbib.Instituicao");
+            resultSet = statement.executeQuery(DEFAULT_QUERY);
 
             ResultSetMetaData metaData = resultSet.getMetaData();
             int numberOfColumns = metaData.getColumnCount();
